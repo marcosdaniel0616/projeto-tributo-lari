@@ -1,0 +1,108 @@
+html {
+    font-family: helvetica;
+    background-color: #ddd;
+}
+
+.container {
+    max-width: 1100px;
+    background-color: #FFF;
+    position: relative;
+    margin: 60px auto;
+    padding: 20px 50px;
+}
+
+.italic {
+    font-style: italic;
+    color: #333;
+}
+
+
+/* Header */
+.header {
+    text-align: center;
+    background-color: #6B8E23; /* Cor de fundo do cabeçalho */
+    color: #ffffff; /* Cor do texto no cabeçalho */
+}
+
+.main-title{
+    font-size: 40px;
+}
+
+/* Imagem em destaque */
+.featured-image{
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Biografia */
+.biography-container {
+    padding: 25px 0;
+    margin: 25px 0;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px dashed #ddd;
+}
+
+/* Citações */
+.quotes-container {
+    text-align: center;
+    background-color: #ddd;
+    padding: 30px;
+}
+
+.quotes-container blockquote {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.quotes-container p{
+    font-style: italic;
+}
+
+/* Curiosidades */
+.curiosities-container {
+    padding: 25px 0;
+    margin: 25px 0;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px dashed #ddd;
+}
+
+.curiosities-container li {
+    height: 30px;
+}
+
+/* Imagem Bold */
+.img-bold {
+    text-weight: bold;
+    text-align: center;
+}
+
+img {
+    width: 350px;
+    z-index: 3;
+}
+
+/* Estilização padrão do link */
+.hover {
+  position: relative; /* Para posicionar a imagem dentro do link */
+  display: inline-block; /* Para que o link ocupe apenas o espaço necessário */
+  font-weight: bold;
+  color: #546ac5;
+}
+
+/* Estilização da imagem oculta */
+.hidden-image {
+  position: absolute;
+  top: 100%; /* Posiciona a imagem abaixo do link */
+  left: 0;
+  opacity: 0; /* Torna a imagem invisível por padrão */
+  width: 0px;
+  transition: opacity 0.5s ease-in-out; /* Adiciona uma transição suave */
+}
+
+/* Mostra a imagem quando o mouse passa sobre o link */
+.hover:hover .hidden-image {
+  opacity: 1; /* Torna a imagem visível ao passar o mouse sobre o link */
+  width: 350px;
+
+
+
